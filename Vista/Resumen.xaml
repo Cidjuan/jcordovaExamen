@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcordovaExamen.Vista.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+
+        <Label x:Name="lblUsuario1"
+HorizontalTextAlignment="End" />
+
+
+        <Label 
+ Text="RESUMEN" 
+ TextColor="Blue"
+ FontSize="22"
+ HorizontalTextAlignment="Center"
+ VerticalTextAlignment="Center"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="NOMBRE:"  Grid.Row="0" Grid.Column="0"/>
+            <Label x:Name="lblnombre" Text=""  Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="APELLIDO:"  Grid.Row="1" Grid.Column="0"/>
+            <Label x:Name="lblapellido" Text=""  Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="EDAD:"  Grid.Row="2" Grid.Column="0"/>
+            <Label x:Name="lbledad" Text=""  Grid.Row="2" Grid.Column="1"/>
+
+            <Label Text="FECHA:"  Grid.Row="3" Grid.Column="0"/>
+            <Label x:Name="lblfecha" Text=""  Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="PAIS"  Grid.Row="4" Grid.Column="0"/>
+            <Label x:Name="lblpais" Text=""  Grid.Row="4" Grid.Column="1"/>
+
+            <Label Text="CUIDAD"  Grid.Row="5" Grid.Column="0"/>
+            <Label x:Name="lblcuidad" Text=""  Grid.Row="5" Grid.Column="1"/>
+
+            <Label Text="MONTO INICIAL"  Grid.Row="6" Grid.Column="0"/>
+            <Label x:Name="lblmontoinicial" Text=""  Grid.Row="6" Grid.Column="1"/>
+
+            <Label Text="PAGO MENSUAL"  Grid.Row="7" Grid.Column="0"/>
+            <Label x:Name="lblpagomensual" Text=""  Grid.Row="7" Grid.Column="1"/>
+
+            <Label Text="PAGO TOTAL"  Grid.Row="8" Grid.Column="0"/>
+            <Label x:Name="lblpagototal" Text=""  Grid.Row="8" Grid.Column="1"/>
+
+
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

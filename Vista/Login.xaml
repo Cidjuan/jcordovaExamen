@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcordovaExamen.Vista.Login"
+             Title="Login">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="25">
+
+        
+        <Label 
+        Text="INICIAR SESIÓN" 
+        TextColor="red"
+        FontSize="20"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center"/>
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+               HeightRequest="100"></Image>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="USUARIO" 
+           FontSize="20"
+           TextColor="White"
+           Grid.Row="0"
+           Grid.Column="0"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="txtUsuario"  
+                  Placeholder="INGRESE SU NOMBRE"
+                  Grid.Row="0"
+                  Grid.Column="1"/>
+
+            <Label Text="CONTRASEÑA" 
+           TextColor="White"
+           Grid.Row="1"
+           Grid.Column="0"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="txtContraaseña"  Placeholder="INGRESE LA CONTRASEÑA"
+           IsPassword="True"
+           Grid.Row="1"
+           Grid.Column="1"/>
+
+        <Button x:Name="btnInicio" 
+        Text="INICIAR SESIÓN"
+        Clicked="btnInicio_Clicked"
+        Grid.Row="2"
+        Grid.Column="0"
+        />
+
+            <Button x:Name="btnAcercade"          
+        Text="REGISTRARSE"
+        Clicked="btnAcercade_Clicked"
+        Grid.Row="2"
+        Grid.Column="1"
+        />
+
+
+
+        </Grid>
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
